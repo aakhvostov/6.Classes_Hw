@@ -1,0 +1,6 @@
+*.*
+!*.py
+!.gitignore
+!readme.md
+main.py
+venv/
