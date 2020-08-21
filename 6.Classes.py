@@ -162,58 +162,56 @@ def main_request():
 main_request()
 
 
-# def main_request():
-#     pass
-#     while True:
-#         requests_animal_bird = {
-#             'animal': {
-#                 'cow': cow
-#                 'goat': {
-#                     'horns': goat_horns
-#                     'hooves': goat_hooves
-#                     }
-#                 'sheep': {
-#                     'barash': sheep_barash
-#                     'kydrya': sheep_kydrya
-#                     }
-#             }
-#             'bird': {
-#                 'goose': {
-#                     'white': goose_white
-#                     'gray': goose_gray
-#                     }
-#                 'chicken': {
-#                     'koko': chicken_koko
-#                     'kykareky': chicken_kykareky
-#                     }
-#                 'duck': duck
-#             }
-#         }
-#         requests_dict = {
-#             'walk': 'Погулять',
-#             'deviver': 'Собрать',
-#             'sum': 'Общий вес',
-#             'max': 'Максимальный вес',
-#             'e': exit}
-#         user_input_0 = input('Введите команду:\nanimal - животное (корова, козы и овцы)\n'
-#                              'bird - птицы (гуси, курицы и утки)')
-#         if user_input_0 == 'animal':
-#             user_input_animal = input('Выберите животное:\ncow - корова\ngoat - коза\nsheep - овца')
-#         if user_input_animal == 'goat':
-#             user_input_goat = input('Какой породы козы:\nhorns - рога\nhooves - копыта')
-#             if user_input_goat == 'horns'
-#
-#             else:
-#
-#         else:
-#             user_input_bird = input('Выберите птицу:\ngoose - гусь\nchicken - курица\nduck - утка')
-#             if user_input_animal == 'goat':
-#                 user_input_goat = input('Какого цвета гуси:\nwhite - белые\ngray - серые')
-#                 if user_input_goat == 'white'
-#
-#                 else:
-#         requests_animal_bird[user_input_0]()
-#         user_input_1 = input('Введите команду:\nwalk - чтобы выгулять\ndeliver - чтобы собрать\n'
-#                            'sum - показать общий вес\nmax - показать максимальный вес\ne - exit\n')
-#         requests_dict[user_input_1]()
-#     print('До свидания')
+def main_request():
+    requests_animal_bird = {
+            'animal': {
+                'cow': cow
+                'goat': {
+                    'horns': goat_horns
+                    'hooves': goat_hooves
+                    }
+                'sheep': {
+                    'barash': sheep_barash
+                    'kydrya': sheep_kydrya
+                    }
+            }
+            'bird': {
+                'goose': {
+                    'white': goose_white
+                    'gray': goose_gray
+                    }
+                'chicken': {
+                    'koko': chicken_koko
+                    'kykareky': chicken_kykareky
+                    }
+                'duck': duck
+            }
+        }
+        requests_dict = {
+            'walk': 'Погулять',
+            'deviver': 'Собрать',
+            'sum': 'Общий вес',
+            'max': 'Максимальный вес',
+            'e': exit}
+        user_input_0 = input('Введите команду:\nanimal - животное (корова, козы и овцы)\n'
+                             'bird - птицы (гуси, курицы и утки)')
+        if user_input_0 == 'animal':
+            user_input_animal = input('Выберите животное:\ncow - корова\ngoat - коза\nsheep - овца')
+        if user_input_animal == 'goat':
+            user_input_goat = input('Какой породы козы:\nhorns - рога\nhooves - копыта')
+            if user_input_goat == 'horns'
+
+            else:
+
+        else:
+            user_input_bird = input('Выберите птицу:\ngoose - гусь\nchicken - курица\nduck - утка')
+            if user_input_animal == 'goat':
+                user_input_goat = input('Какого цвета гуси:\nwhite - белые\ngray - серые')
+                if user_input_goat == 'white'
+
+                else:
+        requests_animal_bird[user_input_0]()
+        user_input_1 = input('Введите команду:\nwalk - чтобы выгулять\ndeliver - чтобы собрать\n'
+                           'sum - показать общий вес\nmax - показать максимальный вес\ne - exit\n')
+        requests_dict[user_input_1]()
+    print('До свидания')
