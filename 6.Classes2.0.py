@@ -123,3 +123,5 @@ for elem in list_of_creatures:
         elem.get_milk()
     elif isinstance(elem, Bird):
         elem.get_eggs()
+    elif isinstance(elem, Sheep):
+        elem.get_wool()
