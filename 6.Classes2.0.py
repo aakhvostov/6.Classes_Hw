@@ -78,6 +78,7 @@ class Duck(Bird):
     creature_type = 'Утка'
     noise = 'Кря-кря-кря'
 
+
 list_of_creatures = []
 cow = Cow('Буренка', random.randint(20, 50))
 list_of_creatures.append(cow)
@@ -113,9 +114,12 @@ def get_sum_of_weight():
 get_max_weight()
 get_sum_of_weight()
 
-
-for creature in list_of_creatures:
+for elem in list_of_creatures:
     print()
-    creature.go_to_walk()
-    creature.feed()
-    creature.make_a_noise()
+    elem.go_to_walk()
+    elem.feed()
+    elem.make_a_noise()
+    if isinstance(elem, MilkyWay):
+        elem.get_milk()
+    elif isinstance(elem, Bird):
+        elem.get_eggs()
